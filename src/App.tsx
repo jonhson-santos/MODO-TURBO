@@ -247,18 +247,7 @@ function App() {
             </div>
           </div>
 
-          {/* CTA Principal */}
-          <div data-index="3" className={`mb-12 ${visibleElements.has(3) ? 'animate-bounce' : 'opacity-0'}`}>
-            <button className="bg-gradient-to-r from-green-500 via-green-600 to-green-500 text-white font-black text-2xl md:text-3xl px-16 py-8 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 border-4 border-yellow-400 animate-glow">
-              <div className="flex items-center justify-center">
-                <Rocket className="w-8 h-8 mr-4" />
-                QUERO MINHA RENDA EXTRA AGORA!
-                <ArrowRight className="w-8 h-8 ml-4" />
-              </div>
-            </button>
-          </div>
-
-          <div className="text-lg text-gray-400">
+          <div className="text-lg text-gray-400 mb-8">
             ⚡ Acesso IMEDIATO • 🛡️ Garantia BLINDADA • 💰 Resultados em 24h
           </div>
         </div>
@@ -429,35 +418,37 @@ function App() {
                 💳 À vista no PIX ou cartão
               </div>
               
-              <button className="bg-gradient-to-r from-red-500 to-red-700 text-white font-black text-3xl px-16 py-8 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 border-4 border-yellow-400 w-full animate-glow">
-                <div className="flex items-center justify-center">
-                  <Crown className="w-8 h-8 mr-4" />
-                  SIM! QUERO MINHA RENDA EXTRA POR R$ 19,97
-                  <ArrowRight className="w-8 h-8 ml-4" />
-                </div>
-              </button>
+              <a href="https://app.pushinpay.com.br/service/pay/9f670379-9735-4f46-ac6d-a9059e25e799" target="_blank" rel="noopener noreferrer" className="block">
+                <button className="bg-gradient-to-r from-red-500 to-red-700 text-white font-black text-3xl px-16 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 border-4 border-yellow-400 w-full animate-glow">
+                  <div className="flex items-center justify-center">
+                    <Crown className="w-8 h-8 mr-4" />
+                    SIM! QUERO MINHA RENDA EXTRA POR R$ 19,97
+                    <ArrowRight className="w-8 h-8 ml-4" />
+                  </div>
+                </button>
+              </a>
             </div>
           </div>
 
-          <div className="text-lg text-gray-400">
+          <div className="text-lg text-gray-400 mb-6">
             🔒 Pagamento 100% seguro • ⚡ Acesso em 2 minutos • 🎯 Garantia de 7 dias
           </div>
         </div>
       </section>
 
       {/* Garantia Blindada */}
-      <section className="py-32 bg-gradient-to-b from-red-900 to-black relative">
+      <section className="py-20 bg-gradient-to-b from-red-900 to-black relative">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div data-index="34" className={`${visibleElements.has(34) ? 'animate-fadeInUp' : 'opacity-0'}`}>
-            <div className="bg-gradient-to-r from-green-600 to-green-800 p-16 rounded-3xl shadow-2xl border-4 border-yellow-400">
-              <Shield className="w-24 h-24 text-white mx-auto mb-8" />
-              <h2 className="text-5xl font-black mb-8 text-white">GARANTIA BLINDADA</h2>
-              <p className="text-2xl mb-8 text-green-200">
+            <div className="bg-gradient-to-r from-green-600 to-green-800 p-12 rounded-3xl shadow-2xl border-4 border-yellow-400">
+              <Shield className="w-20 h-20 text-white mx-auto mb-6" />
+              <h2 className="text-4xl font-black mb-6 text-white">GARANTIA BLINDADA</h2>
+              <p className="text-xl mb-6 text-green-200">
                 Se em 7 dias você não gerar pelo menos R$ 500 de renda extra,
                 <br />
                 <span className="text-yellow-400 font-black">EU DEVOLVO SEU DINHEIRO + R$ 50 DE MULTA!</span>
               </p>
-              <div className="text-3xl font-bold text-yellow-300">
+              <div className="text-2xl font-bold text-yellow-300">
                 💰 RISCO ZERO + RENDA EXTRA GARANTIDA!
               </div>
             </div>
@@ -466,14 +457,14 @@ function App() {
       </section>
 
       {/* Urgência Final Brutal */}
-      <section className="py-32 bg-gradient-to-b from-black to-red-900 relative">
+      <section className="py-20 bg-gradient-to-b from-black to-red-900 relative">
         <div className="max-w-5xl mx-auto px-4 text-center">
-          <div data-index="35" className={`mb-16 ${visibleElements.has(35) ? 'animate-fadeInUp' : 'opacity-0'}`}>
-            <AlertTriangle className="w-32 h-32 text-red-500 mx-auto mb-8 animate-bounce" />
-            <h2 className="text-4xl md:text-8xl font-black mb-8 text-red-400">
+          <div data-index="35" className={`mb-12 ${visibleElements.has(35) ? 'animate-fadeInUp' : 'opacity-0'}`}>
+            <AlertTriangle className="w-24 h-24 text-red-500 mx-auto mb-6 animate-bounce" />
+            <h2 className="text-4xl md:text-7xl font-black mb-6 text-red-400">
               ÚLTIMA CHANCE!
             </h2>
-            <p className="text-3xl mb-12 text-white">
+            <p className="text-2xl mb-8 text-white">
               Em <span className="text-red-400 font-black">2 HORAS</span> esta página SAI DO AR para sempre!
               <br />
               <span className="text-yellow-400">Depois disso, NUNCA MAIS por R$ 19,97!</span>
@@ -481,31 +472,33 @@ function App() {
           </div>
 
           {/* CTA Final */}
-          <div data-index="36" className={`mb-12 ${visibleElements.has(36) ? 'animate-bounce' : 'opacity-0'}`}>
-            <div className="bg-gradient-to-r from-green-600 to-green-800 p-12 rounded-3xl shadow-2xl border-4 border-yellow-400 mb-8">
-              <div className="text-gray-300 text-2xl mb-4">ÚLTIMA CHANCE - Por apenas:</div>
-              <div className="text-8xl font-black text-white mb-6">
+          <div data-index="36" className={`mb-8 ${visibleElements.has(36) ? 'animate-bounce' : 'opacity-0'}`}>
+            <div className="bg-gradient-to-r from-green-600 to-green-800 p-10 rounded-3xl shadow-2xl border-4 border-yellow-400 mb-6">
+              <div className="text-gray-300 text-xl mb-3">ÚLTIMA CHANCE - Por apenas:</div>
+              <div className="text-7xl font-black text-white mb-4">
                 R$ 19,97
               </div>
-              <div className="text-yellow-300 font-bold text-2xl mb-8">
+              <div className="text-yellow-300 font-bold text-xl mb-6">
                 💳 À vista no PIX ou cartão
               </div>
               
-              <button className="bg-gradient-to-r from-red-500 to-red-700 text-white font-black text-3xl px-16 py-8 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 border-4 border-yellow-400 w-full animate-glow">
-                <div className="flex items-center justify-center">
-                  <Flame className="w-8 h-8 mr-4 animate-bounce" />
-                  SIM! QUERO MINHA RENDA EXTRA ANTES QUE ACABE!
-                  <ArrowRight className="w-8 h-8 ml-4" />
-                </div>
-              </button>
+              <a href="https://app.pushinpay.com.br/service/pay/9f670379-9735-4f46-ac6d-a9059e25e799" target="_blank" rel="noopener noreferrer" className="block">
+                <button className="bg-gradient-to-r from-red-500 to-red-700 text-white font-black text-2xl px-12 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 border-4 border-yellow-400 w-full animate-glow">
+                  <div className="flex items-center justify-center">
+                    <Flame className="w-8 h-8 mr-4 animate-bounce" />
+                    SIM! QUERO MINHA RENDA EXTRA ANTES QUE ACABE!
+                    <ArrowRight className="w-8 h-8 ml-4" />
+                  </div>
+                </button>
+              </a>
             </div>
 
-            <div className="text-lg text-gray-400 mb-8">
+            <div className="text-lg text-gray-400 mb-6">
               🔒 Compra 100% segura • ⚡ Acesso IMEDIATO • 🎯 Garantia BLINDADA
             </div>
 
-            <div className="bg-red-600 p-6 rounded-2xl border-4 border-yellow-400">
-              <p className="text-xl font-bold text-white">
+            <div className="bg-red-600 p-4 rounded-2xl border-4 border-yellow-400">
+              <p className="text-lg font-bold text-white">
                 ⚠️ ATENÇÃO: Após o prazo, o preço volta para R$ 497 e as vagas se esgotam!
               </p>
             </div>
@@ -514,14 +507,14 @@ function App() {
       </section>
 
       {/* Footer Minimalista */}
-      <footer className="bg-black py-16 border-t-4 border-yellow-400 relative">
+      <footer className="bg-black py-12 border-t-4 border-yellow-400 relative">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="text-3xl font-black mb-6">
+          <div className="text-2xl font-black mb-4">
             <span className="bg-gradient-to-r from-yellow-400 to-red-500 bg-clip-text text-transparent">
               MÉTODO DIAMANTE NEGRO
             </span>
           </div>
-          <p className="text-gray-400 mb-8 text-lg">
+          <p className="text-gray-400 mb-6 text-base">
             Ajudando pessoas comuns a gerarem renda extra na internet desde 2023
           </p>
           <div className="text-sm text-gray-500">
